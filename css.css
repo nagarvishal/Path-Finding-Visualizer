@@ -1,0 +1,214 @@
+/* .helloworld{
+    background-color: bisque;
+    width:600px;
+    height:600px;
+}
+.childclass{
+    background-color: red;
+    width:10px;
+    height:10px;
+}
+.dot{
+    position:absolute;
+    background-color: red;
+    transform: translate(-50%,-50%);
+}
+body{
+    touch-action: none;
+} */
+/* *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    touch-action: none;
+}
+.dot{
+    position:absolute;
+    background-color: red;
+    transform: translate(-50%,-50%);
+}
+
+.firstclass{
+    background-color: black;
+    position: absolute;
+} */
+*{
+    margin:0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color:rgb(224, 224, 224);
+}
+.navbar{
+    width:100%;
+    height:60px;
+    background-color:rgb(0, 117, 121)
+}
+.unvisited{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.source{
+    text-align: center;
+    background-color: rgb(0, 125, 145);
+    color:white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination{
+    text-align: center;
+    background-color: rgb(0, 125, 145);
+    color:white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visited{
+    background-color: white;
+    animation: change-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes change-color{
+    from{
+        height: 0px;
+        width:0px;
+        background-color: white;
+    }
+    to{
+        height: 20px;
+        width:20px;
+        background-color: black;
+    }
+}
+.path1{
+    background-color: rgb(0, 165, 110);
+    animation:color-size;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes color-size {
+    0%{
+        height: 0px;
+        width: 0px;
+        background-color: rgba(12, 62, 118, 0.819);
+        border:1px solid rgb(19, 65, 125);
+        border-radius: 10px;
+    }
+    50%{
+        height: 10px;
+        width:10px;
+        background-color: rgba(15, 194, 96, 0.894);
+        border-radius: 5px;
+    }
+    100%{
+        height: 20px;
+        width:20px;
+        background-color: rgb(82, 204, 210);
+        border-radius: 0px;
+    }
+}
+.path3{
+    background-color: rgb(195, 75, 121);
+    animation:coloring-sizing;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes coloring-sizing{
+    from{
+        height: 0px;
+        width: 0px;
+        background-color: rgba(234, 81, 221, 0.901);
+        border:1px solid rgb(169, 22, 88);
+        border-radius: 10px;
+    }
+    to{
+        height: 20px;
+        width:20px;
+        background-color: rgb(255, 62, 162);
+        border-radius: 0px;
+    }
+}
+.path2{
+    background-color: white;
+    animation: size-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes size-color {
+    from{
+        height: 0px;
+        width:0px;
+        background-color: white;
+        border:1px solid rgb(175, 118, 12);
+    }
+    to{
+        height: 20px;
+        width:20px;
+        background-color: yellow;
+        border:0px solid yellow;
+    }
+}
+.helloworld{
+    width:30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left:100px;
+    top:100px;
+}
+.helping{
+    width:20px;
+    height:20px;
+    background-color: black;
+}
+.dynamicpoint{
+    width:10px;
+    height:10px;
+    text-align: center;
+    background-color: rgb(0, 125, 145);
+    color:white;
+    font-weight: bold;
+    position:absolute;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    width:260px;
+    margin-top:10px;
+    margin-left:10px;
+    height:35px;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+p{
+    margin-top:10px;
+    background-color: black;
+    color:white;
+    width:150px;
+    height:35px;
+    text-align: center;
+    border:2px solid rgb(129, 129, 129);
+    padding-top:5px;
+    border-radius: 5px;
+}
+.visualize p{
+    border:2px solid rgb(255, 255, 255);
+    background-color: rgb(3, 184, 136);
+    margin-top:10px;
+    padding-top:5px;
+    border-radius: 5px;
+}

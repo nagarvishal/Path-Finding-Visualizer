@@ -1,0 +1,281 @@
+<html>
+    <head>
+        <title>event listner</title>
+        <link rel="stylesheet" href="./css.css">
+        <script src="javascript.js" defer></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="box algorithms">
+                <select name="algorithm" id="algorithm">
+                    <option value="0">Select Algorithms</option>
+                    <option value="1">A* Algorithms</option>
+                    <option value="2">Dijkstrash Algorithms</option>
+                    <option value="3">Breadth First Search Algorithms</option>
+                    <option value="4">Defth First Search Algorithms</option>
+                    <option value="5">Bi-directional Breadth First Search</option>
+                    <option value="6">Best First Search</option>
+                    <option value="7">Swarm Algorithm</option>
+                    <option value="8">Bi-Directional Swarm</option>
+                    <option value="9">Convergent Swarm Algorithms</option>
+                </select>
+            </div>
+            <div class="box mazes">
+               <select name="maze" id="maze">
+                <option value="0">Maze & Pattern</option>
+                <option value="1">Horizontal Maze</option>
+                <option value="2">Verticle Maze</option>
+                <option value="3">Squral Maze</option>
+                <option value="4">Random Maze</option>
+                <option value="5">Simple Star Pattern</option>
+               </select>
+            </div>
+            <div class="box visualize">
+                <p>Visualize !</p>
+            </div>
+            <div class="box clear">
+                <p>Clear Board</p>
+            </div>
+            <div class="box clearpath">
+                <p>Clear Path</p>
+            </div>
+            <div class="box speed">
+                <select name="speed" id="speeds">
+                    <option value="0">Speed</option>
+                    <option value="1">Slow</option>
+                    <option value="2">Average</option>
+                    <option value="3">Fast</option>
+                </select>
+            </div>
+        </div>
+        <!-- <div class="helloworld"></div> -->
+        <!-- <table>
+            <tr>
+                <td><div class="helping"></div></td>
+                <td><div class="helping"></div></td>
+                <td><div class="helping"></div></td>
+                <td><div class="helping"></div></td>
+                <td><div class="helping"></div></td>
+            </tr>
+        </table> -->
+        <!-- <div class="helloworld"></div> -->
+        <!-- <table>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+            <tr>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+                <td><div class="firstclass"></div></td>
+            </tr>
+        </table> -->
+    </body>
+</html>
